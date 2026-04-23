@@ -32,6 +32,20 @@ cd interface && pnpm dev
 
 Then open http://localhost:5173 in your browser.
 
+### Running tests
+
+```bash
+uv run pytest tests/ -v
+```
+
+Run a specific test file:
+
+```bash
+uv run pytest tests/test_lexer.py -v
+uv run pytest tests/test_parser.py -v
+uv run pytest tests/test_semantic.py -v
+```
+
 ---
 
 ## TODO
