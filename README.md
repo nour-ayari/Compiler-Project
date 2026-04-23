@@ -1,4 +1,39 @@
 # Compiler Project
+
+## Development
+
+### Prerequisites
+- Python 3.13+ with [uv](https://github.com/astral-sh/uv)
+- Node.js + pnpm
+
+### Setup
+
+```bash
+# Python deps
+uv sync
+
+# Node deps
+cd interface && pnpm install
+```
+
+### Running in dev mode
+
+Open two terminals from the project root:
+
+**Terminal 1 — Flask API (port 5000)**
+```bash
+uv run python api.py
+```
+
+**Terminal 2 — React UI (port 5173)**
+```bash
+cd interface && pnpm dev
+```
+
+Then open http://localhost:5173 in your browser.
+
+---
+
 ## TODO
 
 ### Interface / User Experience
